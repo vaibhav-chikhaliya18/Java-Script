@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ex 7</title>
+</head>
+
+<body>
+    <p>Number</p>
+    <p id="num"></p>
+    <p>range</p>
+    <p id="range"></p>
+    <script>
+
+        let number = parseInt(prompt("Enter a number between 1 and 10:"));
+        let category;
+
+        switch (true) {
+            case (number >= 1 && number <= 3):
+                category = 'Low';
+                break;
+            case (number >= 4 && number <= 7):
+                category = 'Mid';
+                break;
+            case (number >= 8 && number <= 10):
+                category = 'High';
+                break;
+            default:
+                category = 'Invalid number';
+        }
+
+        document.getElementById("num").innerHTML = number;
+        document.getElementById("range").innerHTML = category;
+    </script>
+</body>
+
+</html>

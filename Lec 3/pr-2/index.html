@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PR-2</title>
+</head>
+<body>
+    
+
+
+    <table weight="500" border="1" cellpadding="15">
+        <tr>
+            <td> a </td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td> b </td>
+            <td id="b"></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        var a = parseInt(prompt("enter value of a:-"));
+        var b = parseInt(prompt("enter value of b:-"));
+        var c;
+
+        c = a;
+        a = b;
+        b = c;
+
+    
+        document.getElementById("a").innerHTML=a;
+        document.getElementById("b").innerHTML=b;
+
+
+       
+
+
+    </script>
+
+
+</body>
+</html>

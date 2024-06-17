@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table width="500" border="1" cellpadding="15">
+        <tr>
+            <td>ITEM</td>
+            <td id = "item"></td>
+        </tr>
+        <tr>
+            <td>NAME</td>
+            <td id = "name"></td>
+        </tr>
+        
+        <tr>
+            <td>QTY</td>
+            <td id = "qty"></td>
+        </tr>
+        <tr>
+            <td>DISCOUNT</td>
+            <td id = "discount"></td>
+        </tr>
+        <tr>
+            <td>PRICE</td>
+            <td id = "price"></td>
+        </tr>
+    
+    </table>
+   <script>
+	
+	
+	let item_id = parseInt(prompt("Enter Item Id : "));
+	let item_name = prompt("Enter Item name : ");
+	let item_price =parseInt(prompt("Enter Item price : "));
+	let item_qty=parseInt(prompt("Enter Item qty : "));
+ 
+	
+	
+	item_price *= item_qty;
+	
+	
+	if(item_price>=100 && item_price<=500)
+	{
+		// 10 %
+		discount =  item_price * 10 / 100;
+		item_price -= discount;
+	}
+	else if(item_price>=501 && item_price<=1000)
+	{
+		// 20 %
+		discount =  item_price * 20 / 100;
+		item_price -= discount;
+	}
+	else if(item_price>=1001 && item_price<=5000)
+	{
+		// 25 %
+		discount =  item_price * 25 / 100;
+		item_price -= discount;
+	}
+	else if(item_price>=5001 && item_price<=10000)
+	{
+		// 30 %
+		discount =  item_price * 30 / 100;
+		item_price -= discount;
+	}
+	else
+	{
+		// 5 %
+		discount =  item_price * 5 / 100;
+		item_price -= discount;
+	}
+	
+	
+	
+    document.getElementById("item").innerHTML = item_id;
+    document.getElementById("name").innerHTML = item_name;
+    document.getElementById("qty").innerHTML =item_qty;
+    document.getElementById("discount").innerHTML =discount;
+    document.getElementById("price").innerHTML = item_price;
+	
+	
+	
+   </script>
+	
+    
+</body>
+</html>

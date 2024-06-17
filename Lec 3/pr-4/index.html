@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PR-3</title>
+</head>
+<body>
+    
+
+
+    <table weight="500" border="1" cellpadding="15">
+        <tr>
+            <td> gross </td>
+            <td id="gross"></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        var salary = parseInt(prompt("enter salary :-"));
+        var gross;
+        var hra ;
+        var da ;
+        var ta ;
+
+        hra = 10*100/salary;       
+        da = 5*100/salary;       
+        ta = 8*100/salary;    
+        
+        gross=salary+hra+ta+da;
+    
+        document.getElementById("gross").innerHTML=gross;
+
+    </script>
+
+
+</body>
+</html>

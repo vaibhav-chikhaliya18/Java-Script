@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PR-1</title>
+</head>
+<body>
+    
+    <table weight="500" border="2" cellpadding="15">
+
+        <tr>
+            <td>a + b</td>
+            <td id="a+b"></td>
+        </tr>
+        <tr>
+            <td>a - b</td>
+            <td id="a-b"></td>
+        </tr>
+        <tr>
+            <td>a * b</td>
+            <td id="a*b"></td>
+        </tr>
+        <tr>
+            <td>a / b</td>
+            <td id="a/b"></td>
+        </tr>
+    
+
+    </table>
+
+
+
+<script>
+
+    var a = parseInt(prompt("enter value of a:-"));
+    var b = parseInt(prompt("enter value of b:-"));
+
+
+    document.getElementById("a+b").innerHTML=  (a+b);
+    document.getElementById("a-b").innerHTML=  (a-b);
+    document.getElementById("a*b").innerHTML=  (a*b);
+    document.getElementById("a/b").innerHTML=  (a/b);
+
+</script>
+
+    
+</body>
+</html>
