@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P 2</title>
+</head>
+<body>
+    
+    <script>
+        function fact(num){
+            if(num > 1){
+                 return num * fact(num - 1);
+            }
+            else{
+                return 1;
+            }
+        }
+
+        let x = 3;
+        let y = fact(x);
+
+        cosole.log(`fact of ${x} = ${y}`);
+    </script>
+
+</body>
+</html>
