@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr 3</title>
+</head>
+<body>
+    
+    <script>
+        function ans(value1,value2,value3){
+            switch(value1){
+                case 'option 1':
+                    return value2 * value3;
+                    break;
+                 
+                case 'option 2':
+                    return value2 + value3;
+                    break;  
+                    
+                case 'option 3':
+                    return value2 - value3;
+                    break;
+
+                default : 
+                    return 0;    
+            }
+        }
+
+        console.log(ans('option 1',10,20));
+        console.log(ans('option 2',10,20));
+        console.log(ans('option 3',10,20));
+    </script>
+
+</body>
+</html>
