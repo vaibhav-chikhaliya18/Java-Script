@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr 4</title>
+</head>
+<body>
+    
+    <script>
+        let A = (parseInt(prompt("Enter Your Number A: ")));
+        let B = (parseInt(prompt("Enter Your Number B: ")));
+        let C = (parseInt(prompt("Enter Your Number C: ")));
+        let D = (parseInt(prompt("Enter Your Number D: ")));
+
+        function answer(A , B , C , D) {
+
+            if (A > B) {
+                return "A is Maximum";
+            }
+            else if (B > C) {
+                return "B is Maximum";
+            }
+            else if (C > D) {
+                return "c is Maximum";
+            }
+            else {
+                return "D is Maximum";
+            }
+        }
+
+        console.log("A is : " + A);
+        console.log("B is : " + B);
+        console.log("C is : " + C);
+        console.log("D is : " + D);
+
+        console.log("Answer : " + answer(A , B , C , D));
+
+    </script>
+
+</body>
+</html>

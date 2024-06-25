@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr 8</title>
+</head>
+<body>
+    
+    
+<script type="text/javascript">
+    function cal() {
+        let a = parseInt(prompt("Enter number of A :-"))
+        let b = parseInt(prompt("Enter number of B :-"))
+        let value = prompt("Enter +,-,*,/ :-")
+        switch (value) {
+            case '+':
+                document.write(`${a + b}`)
+                break;
+            case '-':
+                document.write(`${a - b}`)
+                break;
+            case '*':
+                document.write(`${a * b}`)
+                break;
+            case '/':
+                document.write(`${a / b}`)
+                break;
+            default:
+                return 0;
+        }
+    }
+    cal()
+
+</script>
+
+</body>
+</html>
